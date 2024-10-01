@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+
+</head>
+<body>
+      
+      <div class="area">
+         <h1>Calculadora</h1>
+         <div class="calculadora"> 
+         <label for="text"><input type="text"></label>
+      <table>
+         <tr>
+            <td><button class="botao">C</button></td>
+            <td><button class="botao"><<i class="fa-solid fa-forward-fast"></i></button></td>
+            <td><button class="botao">/</button></td>
+            <td><button class="botao">x</button></td>
+         </tr>
+         <tr style="margin:0px">
+            <td><button class="botao">7</button></td>
+            <td><button class="botao">8</button></td>
+            <td><button class="botao">9</button></td>
+            <td><button class="botao">-</button></td>
+         </tr>
+         <tr>
+            <td><button class="botao">4</button></td>
+            <td><button class="botao">5</button></td>
+            <td><button class="botao">6</button></td>
+            <td><button class="botao">+</button></td>
+         </tr>
+         <tr>
+            <td ><button class="botao">1</button></td>
+            <td><button class="botao">2</button></td>
+            <td><button class="botao">3</button></td>
+            <td rowspan="2" ><button class="botao" style= "height: 160px;">=</button></td>
+         </tr>
+         <tr>
+            <td colspan="2"><button class="botao" style= "width: 150px;">0</button></td>
+            <td><button class="botao">.</button></td>
+            
+            
+         </tr>
+      </table>
+   </div>
+</div>
+     <style>
+
+      body {
+        
+          background-image: url(fundo.png);
+          margin:0;
+          padding: 0;
+   
+      }
+        h1{ 
+            color: white;  
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        .area {
+            position: absolute; /*Aqui fará com que a area da calculadora só ocupe ela mesma*/
+            background-color: #080d2a9f;
+            padding: 25px 25px 25px 25px;
+            border: 1px solid;
+            border-radius: 5%;
+            border-color: white;
+             left: 50%;
+             top: 20%;
+             transform: translate(-50%, -20%);
+             /*imagine a tela com eixos x e y, o translate vai fazer recuar 50% no eixo*/
+          
+        }
+        .botao{
+           font-size: 50px;
+           margin: 4px;
+           border-right: 1px solid;
+          border-radius: 5%;
+           background-color: #080d2a80;
+           color: rgba(255, 255, 255, 0.908);
+           width: 70px;
+           height: 70px;
+           cursor: pointer;
+      
+        }
+
+        .botao:hover {
+         background-color:  #1e36be80;
+
+        }
+        input{
+         width: 100%;
+         height: 40px;
+         position:relative;
+         margin-bottom: 2%;
+        }
+     </style>
+
+
+    <Script>
+      
+    </Script>
+</body>
+</html>
